@@ -35,3 +35,13 @@ MobilUygulama dersi challenge MUK-01. Prediabet temalı bir Expo managed React N
 - Gerçek pedometre ve profil API entegrasyonları.
 - Form validasyonlarını genişletme ve kalıcı depolama.
 - Erişilebilirlik (VoiceOver/TalkBack) ve çok dillilik desteği.
+
+## Değerlendirme Kriterleri
+- **Tasarım & UX** ⭐  
+   Seçilen panonun hissiyatını yansıtma, ekran geçişleri, okunabilirlik ve renk uyumu.
+- **Teknik Uygulama** 💻  
+   Proje yapısı, component kullanımı, kod okunabilirliği; hata durumlarının ele alınışı, state yönetimi, API veya mock data kullanımı.
+- **GitHub & Proje Yönetimi** 📂  
+   Commit sıklığı ve mesaj kalitesi; README ve dokümantasyon; branch yapısı varsa mantıklı akış.
+- **Yaratıcılık & Fikir** 💡  
+   Sıradan bir listeyi özgün fikre dönüştürme; panodan alınan ilhamın yorumu.
