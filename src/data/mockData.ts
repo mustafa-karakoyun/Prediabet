@@ -14,12 +14,12 @@ export const menuItems = [
 
 export const infoArticles = [
   { title: 'Prediyabet nedir?', subtitle: 'Tanım, belirtiler ve erken tanı yolları.' },
-  { title: 'Prediyabet mobil uygulamasının hedefleri', subtitle: 'Kişiselleştirilmiş takip ve farkındalık.' },
-  { title: 'Tasarımcılar kimlerdir?', subtitle: 'Multidisipliner sağlık ve ürün ekibi.' },
-  { title: 'Sağlıklı yaşam', subtitle: 'Günlük alışkanlıklar, aktivite ve beslenme önerileri.' },
-  { title: 'Prediyabeti öğrenelim', subtitle: 'Eğitici içerikler ve sık sorulanlar.' },
+  { title: 'Glikoz takibi', subtitle: 'Açlık/tokluk ve HbA1c hedef aralıkları.' },
+  { title: 'Hareket planı', subtitle: 'Haftada 150 dakika orta tempo önerisi.' },
+  { title: 'Beslenme temel ilkeleri', subtitle: 'Tam tahıl, lif ve dengeli tabak örnekleri.' },
+  { title: 'Stres ve uyku', subtitle: 'Kortizol, uyku hijyeni ve kan şekeri ilişkisi.' },
   { title: 'Komplikasyonlar', subtitle: 'Erken dönemde önlenebilecek riskler.' },
-  { title: 'Tanı ve tedavi yöntemleri', subtitle: 'Uzman görüşü ve takip planları.' }
+  { title: 'Takip ve kontroller', subtitle: 'Rutin doktor randevuları ve ölçüm sıklıkları.' }
 ];
 
 export const contactItems = [
@@ -31,28 +31,26 @@ export const contactItems = [
 ];
 
 export const foodSamples = [
-  'Çavdar unu ve kepekli ekmeğin yanı sıra buğday unu',
-  'Balık havyarı',
-  'Et ve mantar et suyu, yaylı sırra bunlara dayalı yemekler',
-  'Yüksek yağlı içerikli süt ürünleri',
-  'Siyah ve yeşil çay, bitkisel çaylar ve soğanlar; yabani gül suyu',
-  'Az yağlı balıklar (pollock, walleye, turna, hake vs.) – fırında kaynatın veya fırında pişirin',
-  'Yağda konserve balık',
-  'Füme, kurutulmuş ve tuzlu balık',
-  'Sütlü tatlılar',
-  'İç yağ',
-  'Dondurma, reçeller, kremler, tatlılar',
-  'Herhangi bir formda yağlı balık türleri'
+  'Kahvaltı: Yulaf, ceviz, yaban mersini, tarçın',
+  'Ara öğün: Yoğurt + keten tohumu + çilek',
+  'Öğle: Izgara tavuk, kinoa, roka salatası, zeytinyağı',
+  'Akşam: Fırın somon, buharda brokoli, esmer pirinç',
+  'Tam tahıllı ekmek yerine çavdar veya kepekli seçenekler',
+  'Baklagiller: Mercimek, nohut, barbunya (lif + protein)',
+  'Sağlıklı yağ: Avokado, zeytinyağı, çiğ badem/fındık',
+  'İçecek: Şekersiz bitki çayı, su, şekersiz maden suyu',
+  'Tatlı alternatifi: Fırınlanmış elma + tarçın + az yoğurt',
+  'Kaçınılacaklar: Şekerli içecekler, trans yağlı ürünler, aşırı işlenmiş paketli atıştırmalıklar'
 ];
 
 export const pedometerHistory = [
-  { date: '10/5/2023', steps: 0 },
-  { date: '10/8/2023', steps: 0 },
-  { date: '10/9/2023', steps: 0 },
-  { date: '10/12/2023', steps: 0 },
-  { date: '10/15/2023', steps: 0 },
-  { date: '11/1/2023', steps: 0 },
-  { date: '11/12/2023', steps: 0 }
+  { date: '2024-11-01', steps: 4560 },
+  { date: '2024-11-02', steps: 7320 },
+  { date: '2024-11-03', steps: 8125 },
+  { date: '2024-11-04', steps: 10230 },
+  { date: '2024-11-05', steps: 6890 },
+  { date: '2024-11-06', steps: 9150 },
+  { date: '2024-11-07', steps: 12110 }
 ];
 
 export const riskSurveyQuestions = [
@@ -79,6 +77,22 @@ export const riskSurveyQuestions = [
       { label: '<80 cm', score: 0 },
       { label: '80-88 cm', score: 3 },
       { label: '>88 cm', score: 4 }
+    ]
+  },
+  {
+    title: 'Günlük hareket',
+    options: [
+      { label: 'Günde <30 dk hafif/orta aktivite', score: 2 },
+      { label: 'Günde 30-60 dk hafif/orta aktivite', score: 1 },
+      { label: 'Günde 60+ dk hafif/orta aktivite', score: 0 }
+    ]
+  },
+  {
+    title: 'Aile öyküsü',
+    options: [
+      { label: 'Ebeveyn/kardeş diyabet', score: 5 },
+      { label: 'Büyükbaba/büyükanne diyabet', score: 3 },
+      { label: 'Aile öyküsü yok', score: 0 }
     ]
   }
 ];
