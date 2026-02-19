@@ -27,18 +27,19 @@ const styles = StyleSheet.create({
     borderRadius: theme.radius.lg,
     borderWidth: 1,
     borderColor: theme.colors.border,
-    padding: theme.spacing.md,
+    padding: theme.spacing.lg,
     justifyContent: 'center',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 3,
-    margin: theme.spacing.sm
+    shadowOffset: { width: 0, height: 12 },
+    shadowOpacity: 0.35,
+    shadowRadius: 20,
+    elevation: 8,
+    margin: theme.spacing.sm,
+    overflow: 'hidden'
   },
   cardPressed: {
     transform: [{ scale: 0.98 }],
-    shadowOpacity: 0.05
+    shadowOpacity: 0.18
   },
   textContainer: {
     gap: theme.spacing.xs
@@ -46,7 +47,8 @@ const styles = StyleSheet.create({
   label: {
     fontSize: theme.typography.subtitle,
     fontWeight: '700',
-    color: theme.colors.text
+    color: theme.colors.text,
+    letterSpacing: 0.2
   },
   description: {
     fontSize: theme.typography.body,

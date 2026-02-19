@@ -9,9 +9,12 @@ import { theme } from '../theme/theme';
 const HomeScreen: React.FC<NativeStackScreenProps<RootStackParamList, 'Home'>> = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.title}>Prediabet</Text>
-        <Text style={styles.subtitle}>Hızlı erişim ve temel kontroller</Text>
+      <View style={styles.hero}>
+        <View style={styles.badge}>
+          <Text style={styles.badgeText}>Prediabet+</Text>
+        </View>
+        <Text style={styles.title}>Hızlı erişim</Text>
+        <Text style={styles.subtitle}>Temel kontroller ve rehberlik</Text>
       </View>
       <FlatList
         data={menuItems}
@@ -28,15 +31,30 @@ const HomeScreen: React.FC<NativeStackScreenProps<RootStackParamList, 'Home'>> =
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: theme.colors.background },
-  header: {
+  hero: {
     paddingHorizontal: theme.spacing.lg,
-    paddingTop: theme.spacing.lg,
-    paddingBottom: theme.spacing.md
+    paddingTop: theme.spacing.xl,
+    paddingBottom: theme.spacing.lg,
+    gap: theme.spacing.sm
+  },
+  badge: {
+    alignSelf: 'flex-start',
+    backgroundColor: theme.colors.soft,
+    paddingHorizontal: theme.spacing.md,
+    paddingVertical: theme.spacing.xs,
+    borderRadius: theme.radius.pill,
+    borderWidth: 1,
+    borderColor: theme.colors.border
+  },
+  badgeText: {
+    color: theme.colors.muted,
+    fontWeight: '700',
+    letterSpacing: 0.4
   },
   title: {
-    fontSize: 24,
+    fontSize: 26,
     fontWeight: '800',
-    color: theme.colors.primary
+    color: theme.colors.text
   },
   subtitle: {
     marginTop: theme.spacing.xs,

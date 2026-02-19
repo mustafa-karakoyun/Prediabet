@@ -22,17 +22,18 @@ export const PrimaryButton: React.FC<PrimaryButtonProps> = ({ label, onPress, di
 
 const styles = StyleSheet.create({
   button: {
-    height: 52,
+    height: 54,
     borderRadius: theme.radius.pill,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: theme.colors.primary,
     marginVertical: theme.spacing.md,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.12,
-    shadowRadius: 10,
-    elevation: 4
+    shadowOffset: { width: 0, height: 12 },
+    shadowOpacity: 0.25,
+    shadowRadius: 18,
+    elevation: 10,
+    paddingHorizontal: theme.spacing.lg
   },
   buttonPressed: {
     transform: [{ scale: 0.98 }]
@@ -43,6 +44,7 @@ const styles = StyleSheet.create({
   label: {
     color: '#fff',
     fontWeight: '700',
-    fontSize: theme.typography.subtitle
+    fontSize: theme.typography.subtitle,
+    letterSpacing: 0.3
   }
 });

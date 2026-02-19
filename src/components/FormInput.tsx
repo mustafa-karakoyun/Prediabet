@@ -26,16 +26,22 @@ const styles = StyleSheet.create({
   label: {
     marginBottom: theme.spacing.xs,
     color: theme.colors.text,
-    fontWeight: '600'
+    fontWeight: '700',
+    letterSpacing: 0.2
   },
   input: {
-    height: 48,
-    borderRadius: theme.radius.md,
+    height: 52,
+    borderRadius: theme.radius.lg,
     borderWidth: 1,
     borderColor: theme.colors.border,
-    paddingHorizontal: theme.spacing.md,
+    paddingHorizontal: theme.spacing.lg,
     backgroundColor: theme.colors.card,
     fontSize: theme.typography.body,
-    color: theme.colors.text
+    color: theme.colors.text,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.16,
+    shadowRadius: 14,
+    elevation: 6
   }
 });
