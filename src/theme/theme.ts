@@ -1,13 +1,13 @@
 export const theme = {
   colors: {
-    primary: '#22C55E',
-    primaryDark: '#16A34A',
-    background: '#0B1F16',
-    card: '#102A1D',
-    border: '#1D3B2B',
-    text: '#E8F5EC',
-    muted: '#9FB8A4',
-    soft: '#123523'
+    primary: '#16A34A',
+    primaryDark: '#0F8A3C',
+    background: '#F8FBF8',
+    card: '#FFFFFF',
+    border: '#E2F0E5',
+    text: '#0F2416',
+    muted: '#5B6B60',
+    soft: '#E8F5E9'
   },
   spacing: {
     xs: 4,
