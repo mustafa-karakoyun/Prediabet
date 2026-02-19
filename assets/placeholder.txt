@@ -1,0 +1,1 @@
+Add your images here (icon.png, splash.png, adaptive-icon.png, and UI reference captures). Replace this placeholder with actual assets when ready.

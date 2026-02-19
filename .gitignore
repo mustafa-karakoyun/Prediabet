@@ -1,0 +1,10 @@
+.expo
+node_modules
+npm-debug.*
+dist
+build
+.web
+.env
+.expo-shared
+.DS_Store
+*.log
